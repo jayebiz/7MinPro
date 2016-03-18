@@ -34,5 +34,24 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Roboto-Black_0.ttf</string>
+		<string>Roboto-BlackItalic_0.ttf</string>
+		<string>Roboto-Bold_0.ttf</string>
+		<string>Roboto-BoldCondensed.ttf</string>
+		<string>Roboto-BoldCondensedItalic.ttf</string>
+		<string>Roboto-BoldItalic_0.ttf</string>
+		<string>Roboto-Condensed.ttf</string>
+		<string>Roboto-CondensedItalic.ttf</string>
+		<string>Roboto-Italic_0.ttf</string>
+		<string>Roboto-Light_0.ttf</string>
+		<string>Roboto-LightItalic_0.ttf</string>
+		<string>Roboto-Medium_0.ttf</string>
+		<string>Roboto-MediumItalic_0.ttf</string>
+		<string>Roboto-Regular_0.ttf</string>
+		<string>Roboto-Thin_0.ttf</string>
+		<string>Roboto-ThinItalic_0.ttf</string>
+	</array>
 </dict>
 </plist>

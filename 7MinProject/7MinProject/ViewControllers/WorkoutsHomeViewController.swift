@@ -23,7 +23,7 @@ class WorkoutsHomeViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
+        self.ThemeMethod()
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -36,7 +36,16 @@ class WorkoutsHomeViewController: UIViewController {
     // MARK: - font name
     func ThemeMethod(){
         
-        labelTitle.font = UIFont.universalFont(14)
+        // In-case you want to check about your custom installed font availability
+        /*
+            Procedure to add the font.
+            - Manually add .ttf files by drag and drop in you project, for this fonts you will check it out inside 'Fonts' folder.
+            - In info.plist, add all fonts inside 'Fonts provided by application' array.
+        
+        */
+        // UIFont.checkForFontAvailability()
+        
+        labelTitle.font = UIFont(name: "Roboto-Regular", size: 14)
     }
     
     

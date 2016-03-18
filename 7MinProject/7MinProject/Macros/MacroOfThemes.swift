@@ -8,4 +8,4 @@
 
 import Foundation
 
-let FONTNAME_NORMAL = ""
+let FONTNAME_NORMAL = "RobotoLight"
