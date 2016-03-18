@@ -9,11 +9,15 @@
 /* Begin PBXBuildFile section */
 		0EE28D371C9B08D2009C41FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE28D361C9B08D2009C41FD /* AppDelegate.swift */; };
 		0EE28D3E1C9B08D2009C41FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EE28D3D1C9B08D2009C41FD /* Assets.xcassets */; };
-		0EE28D411C9B08D2009C41FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EE28D3F1C9B08D2009C41FD /* LaunchScreen.storyboard */; };
 		0EE28D4C1C9B08D2009C41FD /* _MinProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE28D4B1C9B08D2009C41FD /* _MinProjectTests.swift */; };
 		0EE28D571C9B08D2009C41FD /* _MinProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE28D561C9B08D2009C41FD /* _MinProjectUITests.swift */; };
 		0EE28DB61C9B0B33009C41FD /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE28DB41C9B0B33009C41FD /* HomeViewController.swift */; };
 		0EE28DB71C9B0B33009C41FD /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0EE28DB51C9B0B33009C41FD /* HomeViewController.xib */; };
+		0EE28DBE1C9B1F7F009C41FD /* WorkoutsHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE28DBC1C9B1F7F009C41FD /* WorkoutsHomeViewController.swift */; };
+		0EE28DBF1C9B1F7F009C41FD /* WorkoutsHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0EE28DBD1C9B1F7F009C41FD /* WorkoutsHomeViewController.xib */; };
+		0EE904CC1C9C5F4F00EADD1B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EE904CA1C9C5F4F00EADD1B /* LaunchScreen.storyboard */; };
+		0EE904D11C9C64DB00EADD1B /* MacroOfThemes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE904D01C9C64DB00EADD1B /* MacroOfThemes.swift */; };
+		0EE904D61C9C670900EADD1B /* ProjectUniversalExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE904D51C9C670900EADD1B /* ProjectUniversalExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +41,6 @@
 		0EE28D331C9B08D2009C41FD /* 7MinProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 7MinProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EE28D361C9B08D2009C41FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0EE28D3D1C9B08D2009C41FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		0EE28D401C9B08D2009C41FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0EE28D421C9B08D2009C41FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0EE28D471C9B08D2009C41FD /* 7MinProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 7MinProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EE28D4B1C9B08D2009C41FD /* _MinProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _MinProjectTests.swift; sourceTree = "<group>"; };
@@ -47,6 +50,11 @@
 		0EE28D581C9B08D2009C41FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0EE28DB41C9B0B33009C41FD /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		0EE28DB51C9B0B33009C41FD /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		0EE28DBC1C9B1F7F009C41FD /* WorkoutsHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutsHomeViewController.swift; sourceTree = "<group>"; };
+		0EE28DBD1C9B1F7F009C41FD /* WorkoutsHomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WorkoutsHomeViewController.xib; sourceTree = "<group>"; };
+		0EE904CB1C9C5F4F00EADD1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0EE904D01C9C64DB00EADD1B /* MacroOfThemes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MacroOfThemes.swift; sourceTree = "<group>"; };
+		0EE904D51C9C670900EADD1B /* ProjectUniversalExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectUniversalExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,11 +105,13 @@
 		0EE28D351C9B08D2009C41FD /* 7MinProject */ = {
 			isa = PBXGroup;
 			children = (
+				0EE904D21C9C662800EADD1B /* Extensions */,
+				0EE904CF1C9C63F000EADD1B /* Macros */,
 				0EE28DB31C9B0AED009C41FD /* ViewControllers */,
 				0EE28D361C9B08D2009C41FD /* AppDelegate.swift */,
 				0EE28D3D1C9B08D2009C41FD /* Assets.xcassets */,
-				0EE28D3F1C9B08D2009C41FD /* LaunchScreen.storyboard */,
 				0EE28D421C9B08D2009C41FD /* Info.plist */,
+				0EE904CA1C9C5F4F00EADD1B /* LaunchScreen.storyboard */,
 			);
 			path = 7MinProject;
 			sourceTree = "<group>";
@@ -129,8 +139,26 @@
 			children = (
 				0EE28DB41C9B0B33009C41FD /* HomeViewController.swift */,
 				0EE28DB51C9B0B33009C41FD /* HomeViewController.xib */,
+				0EE28DBC1C9B1F7F009C41FD /* WorkoutsHomeViewController.swift */,
+				0EE28DBD1C9B1F7F009C41FD /* WorkoutsHomeViewController.xib */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		0EE904CF1C9C63F000EADD1B /* Macros */ = {
+			isa = PBXGroup;
+			children = (
+				0EE904D01C9C64DB00EADD1B /* MacroOfThemes.swift */,
+			);
+			path = Macros;
+			sourceTree = "<group>";
+		};
+		0EE904D21C9C662800EADD1B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0EE904D51C9C670900EADD1B /* ProjectUniversalExtensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,7 +265,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0EE28D411C9B08D2009C41FD /* LaunchScreen.storyboard in Resources */,
+				0EE28DBF1C9B1F7F009C41FD /* WorkoutsHomeViewController.xib in Resources */,
+				0EE904CC1C9C5F4F00EADD1B /* LaunchScreen.storyboard in Resources */,
 				0EE28D3E1C9B08D2009C41FD /* Assets.xcassets in Resources */,
 				0EE28DB71C9B0B33009C41FD /* HomeViewController.xib in Resources */,
 			);
@@ -266,6 +295,9 @@
 			files = (
 				0EE28D371C9B08D2009C41FD /* AppDelegate.swift in Sources */,
 				0EE28DB61C9B0B33009C41FD /* HomeViewController.swift in Sources */,
+				0EE904D61C9C670900EADD1B /* ProjectUniversalExtensions.swift in Sources */,
+				0EE28DBE1C9B1F7F009C41FD /* WorkoutsHomeViewController.swift in Sources */,
+				0EE904D11C9C64DB00EADD1B /* MacroOfThemes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,10 +333,10 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		0EE28D3F1C9B08D2009C41FD /* LaunchScreen.storyboard */ = {
+		0EE904CA1C9C5F4F00EADD1B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				0EE28D401C9B08D2009C41FD /* Base */,
+				0EE904CB1C9C5F4F00EADD1B /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -482,6 +514,7 @@
 				0EE28D5D1C9B08D2009C41FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0EE28D5E1C9B08D2009C41FD /* Build configuration list for PBXNativeTarget "7MinProjectTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +523,7 @@
 				0EE28D601C9B08D2009C41FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0EE28D611C9B08D2009C41FD /* Build configuration list for PBXNativeTarget "7MinProjectUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +532,7 @@
 				0EE28D631C9B08D2009C41FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -10,11 +10,27 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
+    @IBOutlet var buttonFacebookLogin: UIButton!
+    @IBOutlet var buttonTwitterLogin: UIButton!
+    @IBOutlet var buttonGooglePlusLogin: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
+    
+    // MARK: - Actions
+    @IBAction func facebookLoginActionListener(sender: AnyObject) {
+        let objectWorkoutHomeView:WorkoutsHomeViewController = WorkoutsHomeViewController(nibName: "WorkoutsHomeViewController", bundle: nil)
+        self.navigationController?.pushViewController(objectWorkoutHomeView, animated: true)
+    }
+    @IBAction func twitterLoginActionListener(sender: AnyObject) {
+    }
+    @IBAction func googlePlusLoginActionListener(sender: AnyObject) {
+    }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

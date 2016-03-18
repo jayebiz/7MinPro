@@ -7,6 +7,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="_MinProject" customModuleProvider="target">
             <connections>
+                <outlet property="buttonFacebookLogin" destination="hV9-yo-Z1X" id="Ef6-Oo-4CX"/>
+                <outlet property="buttonGooglePlusLogin" destination="Gp8-sd-IIf" id="3Rz-bd-3Kx"/>
+                <outlet property="buttonTwitterLogin" destination="oLo-U6-CCR" id="cL9-zZ-lIJ"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -14,8 +17,58 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_image" translatesAutoresizingMaskIntoConstraints="NO" id="G89-fd-uuR">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="i4M-aa-MI0">
+                    <rect key="frame" x="225" y="80" width="150" height="150"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oLo-U6-CCR">
+                    <rect key="frame" x="139" y="394" width="321" height="43"/>
+                    <state key="normal" image="twitterLogin"/>
+                    <connections>
+                        <action selector="twitterLoginActionListener:" destination="-1" eventType="touchUpInside" id="3nc-NJ-kII"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hV9-yo-Z1X">
+                    <rect key="frame" x="139" y="331" width="321" height="43"/>
+                    <state key="normal" image="facebookLogin"/>
+                    <connections>
+                        <action selector="facebookLoginActionListener:" destination="-1" eventType="touchUpInside" id="haS-3b-eSq"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gp8-sd-IIf">
+                    <rect key="frame" x="140" y="457" width="321" height="43"/>
+                    <state key="normal" image="googlePlusLogin"/>
+                    <connections>
+                        <action selector="googlePlusLoginActionListener:" destination="-1" eventType="touchUpInside" id="YZO-M0-NWR"/>
+                    </connections>
+                </button>
+            </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Gp8-sd-IIf" secondAttribute="bottom" constant="100" id="2hf-Ui-iK1"/>
+                <constraint firstItem="G89-fd-uuR" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Jqk-Xn-DYY"/>
+                <constraint firstItem="G89-fd-uuR" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="SCR-my-OyZ"/>
+                <constraint firstItem="i4M-aa-MI0" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="80" id="SLz-zw-JPP"/>
+                <constraint firstItem="oLo-U6-CCR" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="SUo-vH-g6g"/>
+                <constraint firstItem="oLo-U6-CCR" firstAttribute="top" secondItem="hV9-yo-Z1X" secondAttribute="bottom" constant="20" id="VuO-sb-ACm"/>
+                <constraint firstItem="i4M-aa-MI0" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="WF1-QJ-FRg"/>
+                <constraint firstAttribute="trailing" secondItem="G89-fd-uuR" secondAttribute="trailing" id="XYi-Q4-C1J"/>
+                <constraint firstAttribute="bottom" secondItem="G89-fd-uuR" secondAttribute="bottom" id="YOS-et-UDF"/>
+                <constraint firstItem="hV9-yo-Z1X" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="f8f-bM-QuH"/>
+                <constraint firstItem="Gp8-sd-IIf" firstAttribute="top" secondItem="oLo-U6-CCR" secondAttribute="bottom" constant="20" id="gnN-Cj-vjJ"/>
+                <constraint firstItem="Gp8-sd-IIf" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="q7Y-b3-WcD"/>
+            </constraints>
             <point key="canvasLocation" x="489" y="418"/>
         </view>
     </objects>
+    <resources>
+        <image name="facebookLogin" width="321" height="43"/>
+        <image name="googlePlusLogin" width="321" height="43"/>
+        <image name="login_image" width="414" height="736"/>
+        <image name="logo" width="150" height="150"/>
+        <image name="twitterLogin" width="321" height="43"/>
+    </resources>
 </document>
