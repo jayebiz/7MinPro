@@ -23,6 +23,13 @@
 		0E41416A1C9C78F600EA8D89 /* Roboto-Regular_0.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0E41415A1C9C755A00EA8D89 /* Roboto-Regular_0.ttf */; };
 		0E41416B1C9C78F600EA8D89 /* Roboto-Thin_0.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0E41415B1C9C755A00EA8D89 /* Roboto-Thin_0.ttf */; };
 		0E41416C1C9C78F600EA8D89 /* Roboto-ThinItalic_0.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0E41415C1C9C755A00EA8D89 /* Roboto-ThinItalic_0.ttf */; };
+		0EE0070D1CA1A19300AEA79A /* MyWorkoutsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE0070B1CA1A19300AEA79A /* MyWorkoutsViewController.swift */; };
+		0EE0070E1CA1A19300AEA79A /* MyWorkoutsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0EE0070C1CA1A19300AEA79A /* MyWorkoutsViewController.xib */; };
+		0EE007131CA1A57700AEA79A /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EE007121CA1A57700AEA79A /* iCarousel.m */; };
+		0EE007161CA1B37900AEA79A /* AllWorkoutsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE007141CA1B37900AEA79A /* AllWorkoutsViewController.swift */; };
+		0EE007171CA1B37900AEA79A /* AllWorkoutsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0EE007151CA1B37900AEA79A /* AllWorkoutsViewController.xib */; };
+		0EE0071A1CA1B47200AEA79A /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE007181CA1B47200AEA79A /* CalendarViewController.swift */; };
+		0EE0071B1CA1B47200AEA79A /* CalendarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0EE007191CA1B47200AEA79A /* CalendarViewController.xib */; };
 		0EE28D371C9B08D2009C41FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE28D361C9B08D2009C41FD /* AppDelegate.swift */; };
 		0EE28D3E1C9B08D2009C41FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EE28D3D1C9B08D2009C41FD /* Assets.xcassets */; };
 		0EE28D4C1C9B08D2009C41FD /* _MinProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE28D4B1C9B08D2009C41FD /* _MinProjectTests.swift */; };
@@ -70,6 +77,15 @@
 		0E41415A1C9C755A00EA8D89 /* Roboto-Regular_0.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular_0.ttf"; sourceTree = "<group>"; };
 		0E41415B1C9C755A00EA8D89 /* Roboto-Thin_0.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin_0.ttf"; sourceTree = "<group>"; };
 		0E41415C1C9C755A00EA8D89 /* Roboto-ThinItalic_0.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-ThinItalic_0.ttf"; sourceTree = "<group>"; };
+		0EE0070B1CA1A19300AEA79A /* MyWorkoutsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyWorkoutsViewController.swift; sourceTree = "<group>"; };
+		0EE0070C1CA1A19300AEA79A /* MyWorkoutsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyWorkoutsViewController.xib; sourceTree = "<group>"; };
+		0EE007101CA1A57600AEA79A /* 7MinProject-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "7MinProject-Bridging-Header.h"; sourceTree = "<group>"; };
+		0EE007111CA1A57700AEA79A /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
+		0EE007121CA1A57700AEA79A /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
+		0EE007141CA1B37900AEA79A /* AllWorkoutsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllWorkoutsViewController.swift; sourceTree = "<group>"; };
+		0EE007151CA1B37900AEA79A /* AllWorkoutsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AllWorkoutsViewController.xib; sourceTree = "<group>"; };
+		0EE007181CA1B47200AEA79A /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		0EE007191CA1B47200AEA79A /* CalendarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CalendarViewController.xib; sourceTree = "<group>"; };
 		0EE28D331C9B08D2009C41FD /* 7MinProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 7MinProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EE28D361C9B08D2009C41FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0EE28D3D1C9B08D2009C41FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -137,6 +153,16 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		0EE0070F1CA1A55B00AEA79A /* Carousel */ = {
+			isa = PBXGroup;
+			children = (
+				0EE007111CA1A57700AEA79A /* iCarousel.h */,
+				0EE007121CA1A57700AEA79A /* iCarousel.m */,
+				0EE007101CA1A57600AEA79A /* 7MinProject-Bridging-Header.h */,
+			);
+			path = Carousel;
+			sourceTree = "<group>";
+		};
 		0EE28D2A1C9B08D2009C41FD = {
 			isa = PBXGroup;
 			children = (
@@ -160,6 +186,7 @@
 		0EE28D351C9B08D2009C41FD /* 7MinProject */ = {
 			isa = PBXGroup;
 			children = (
+				0EE0070F1CA1A55B00AEA79A /* Carousel */,
 				0E41414C1C9C755300EA8D89 /* Fonts */,
 				0EE904D21C9C662800EADD1B /* Extensions */,
 				0EE904CF1C9C63F000EADD1B /* Macros */,
@@ -197,6 +224,12 @@
 				0EE28DB51C9B0B33009C41FD /* HomeViewController.xib */,
 				0EE28DBC1C9B1F7F009C41FD /* WorkoutsHomeViewController.swift */,
 				0EE28DBD1C9B1F7F009C41FD /* WorkoutsHomeViewController.xib */,
+				0EE0070B1CA1A19300AEA79A /* MyWorkoutsViewController.swift */,
+				0EE0070C1CA1A19300AEA79A /* MyWorkoutsViewController.xib */,
+				0EE007141CA1B37900AEA79A /* AllWorkoutsViewController.swift */,
+				0EE007151CA1B37900AEA79A /* AllWorkoutsViewController.xib */,
+				0EE007181CA1B47200AEA79A /* CalendarViewController.swift */,
+				0EE007191CA1B47200AEA79A /* CalendarViewController.xib */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -327,14 +360,17 @@
 				0E4141641C9C78F600EA8D89 /* Roboto-CondensedItalic.ttf in Resources */,
 				0E41415D1C9C78F200EA8D89 /* Roboto-Black_0.ttf in Resources */,
 				0E4141661C9C78F600EA8D89 /* Roboto-Light_0.ttf in Resources */,
+				0EE0071B1CA1B47200AEA79A /* CalendarViewController.xib in Resources */,
 				0E4141601C9C78F600EA8D89 /* Roboto-BoldCondensed.ttf in Resources */,
 				0E4141621C9C78F600EA8D89 /* Roboto-BoldItalic_0.ttf in Resources */,
+				0EE007171CA1B37900AEA79A /* AllWorkoutsViewController.xib in Resources */,
 				0E41415F1C9C78F600EA8D89 /* Roboto-Bold_0.ttf in Resources */,
 				0EE28DBF1C9B1F7F009C41FD /* WorkoutsHomeViewController.xib in Resources */,
 				0EE904CC1C9C5F4F00EADD1B /* LaunchScreen.storyboard in Resources */,
 				0E4141671C9C78F600EA8D89 /* Roboto-LightItalic_0.ttf in Resources */,
 				0E41416A1C9C78F600EA8D89 /* Roboto-Regular_0.ttf in Resources */,
 				0EE28D3E1C9B08D2009C41FD /* Assets.xcassets in Resources */,
+				0EE0070E1CA1A19300AEA79A /* MyWorkoutsViewController.xib in Resources */,
 				0E4141691C9C78F600EA8D89 /* Roboto-MediumItalic_0.ttf in Resources */,
 				0EE28DB71C9B0B33009C41FD /* HomeViewController.xib in Resources */,
 				0E4141631C9C78F600EA8D89 /* Roboto-Condensed.ttf in Resources */,
@@ -365,10 +401,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0EE007161CA1B37900AEA79A /* AllWorkoutsViewController.swift in Sources */,
 				0EE28D371C9B08D2009C41FD /* AppDelegate.swift in Sources */,
 				0EE28DB61C9B0B33009C41FD /* HomeViewController.swift in Sources */,
+				0EE0070D1CA1A19300AEA79A /* MyWorkoutsViewController.swift in Sources */,
 				0EE904D61C9C670900EADD1B /* ProjectUniversalExtensions.swift in Sources */,
 				0EE28DBE1C9B1F7F009C41FD /* WorkoutsHomeViewController.swift in Sources */,
+				0EE0071A1CA1B47200AEA79A /* CalendarViewController.swift in Sources */,
+				0EE007131CA1A57700AEA79A /* iCarousel.m in Sources */,
 				0EE904D11C9C64DB00EADD1B /* MacroOfThemes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -501,10 +541,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = 7MinProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Chirag-Ganatra.-MinProject";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "7MinProject/Carousel/7MinProject-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -512,10 +555,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = 7MinProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Chirag-Ganatra.-MinProject";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "7MinProject/Carousel/7MinProject-Bridging-Header.h";
 			};
 			name = Release;
 		};

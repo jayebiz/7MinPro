@@ -11,6 +11,7 @@
                 <outlet property="buttonAllWorkouts" destination="QMQ-AO-pbH" id="lML-2b-ZuO"/>
                 <outlet property="buttonCalendar" destination="1gT-2C-wAd" id="tPG-GL-peG"/>
                 <outlet property="buttonMyWorkouts" destination="sh0-Aj-yxX" id="DkZ-rY-2M4"/>
+                <outlet property="carousel" destination="YIS-7g-epE" id="lqq-Ng-Qr1"/>
                 <outlet property="constraintMoverLeading" destination="LIt-tM-CWL" id="jaV-B9-I9S"/>
                 <outlet property="constraintMoverWidth" destination="3aT-Ac-bBQ" id="OJ6-y2-gHq"/>
                 <outlet property="labelTitle" destination="emj-mz-j9X" id="rQ6-LO-pyP"/>
@@ -112,15 +113,27 @@
                         <constraint firstItem="sh0-Aj-yxX" firstAttribute="leading" secondItem="sYX-Ih-TKp" secondAttribute="leading" id="zZX-V5-pad"/>
                     </constraints>
                 </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YIS-7g-epE" customClass="iCarousel">
+                    <rect key="frame" x="0.0" y="108" width="600" height="492"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="hyf-Xb-Sau"/>
+                        <outlet property="delegate" destination="-1" id="fVy-p1-YY5"/>
+                    </connections>
+                </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="UDu-Cr-ZqY" secondAttribute="trailing" id="OJu-r8-OR3"/>
                 <constraint firstAttribute="trailing" secondItem="sYX-Ih-TKp" secondAttribute="trailing" id="Tjo-oI-hk1"/>
                 <constraint firstItem="sYX-Ih-TKp" firstAttribute="top" secondItem="UDu-Cr-ZqY" secondAttribute="bottom" id="XCX-pL-uTO"/>
+                <constraint firstItem="YIS-7g-epE" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="cEX-xb-Vor"/>
                 <constraint firstItem="UDu-Cr-ZqY" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="fF1-n2-9ld"/>
                 <constraint firstItem="sYX-Ih-TKp" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ncJ-91-CUO"/>
+                <constraint firstItem="YIS-7g-epE" firstAttribute="top" secondItem="sYX-Ih-TKp" secondAttribute="bottom" id="tid-7c-SQk"/>
                 <constraint firstItem="UDu-Cr-ZqY" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="vYx-1e-SiD"/>
+                <constraint firstAttribute="bottom" secondItem="YIS-7g-epE" secondAttribute="bottom" id="xpT-lA-AjA"/>
+                <constraint firstAttribute="trailing" secondItem="YIS-7g-epE" secondAttribute="trailing" id="yOS-G2-o5t"/>
             </constraints>
             <point key="canvasLocation" x="579" y="386"/>
         </view>

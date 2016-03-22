@@ -8,7 +8,7 @@
 
 import UIKit
 
-class WorkoutsHomeViewController: UIViewController {
+class WorkoutsHomeViewController: UIViewController{
 
     @IBOutlet var labelTitle: UILabel!
     @IBOutlet var buttonMyWorkouts: UIButton!
@@ -18,12 +18,25 @@ class WorkoutsHomeViewController: UIViewController {
     @IBOutlet var constraintMoverLeading: NSLayoutConstraint!
     @IBOutlet var constraintMoverWidth: NSLayoutConstraint!
     
+    var myWorkoutsView:MyWorkoutsViewController = MyWorkoutsViewController()
+    var allWorkoutsView:AllWorkoutsViewController = AllWorkoutsViewController()
+    var calendarView:CalendarViewController = CalendarViewController()
+    
+    @IBOutlet var carousel : iCarousel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         self.ThemeMethod()
+
+        //carousel initial configurations
+        carousel.type = .Linear
+        carousel.reloadData()
+        //first index
+        carousel.currentItemIndex = 0
+        carousel.pagingEnabled = true
+        carousel.bounces = false
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -45,35 +58,45 @@ class WorkoutsHomeViewController: UIViewController {
         */
         // UIFont.checkForFontAvailability()
         
-        labelTitle.font = UIFont(name: "Roboto-Regular", size: 14)
+        labelTitle.font = UIFont.universalFont(15)
+        buttonMyWorkouts.titleLabel?.font = UIFont.universalFont(13)
+        buttonAllWorkouts.titleLabel?.font = UIFont.universalFont(13)
+        buttonCalendar.titleLabel?.font = UIFont.universalFont(13)
     }
     
     
     // MARK: - Movers action listeners
     @IBAction func myWorkoutActionListener(sender: AnyObject) {
-        
+        carousel.currentItemIndex = 0
+        self.myWorkoutMethod()
+    }
+    func myWorkoutMethod(){
         // Moving mover bar through animation
         UIView.animateWithDuration(0.2, delay: 0.0, options: .TransitionCrossDissolve, animations: { () -> Void in
             self.constraintMoverLeading.constant = 0
             self.view.layoutIfNeeded()
             }) { (isCompleted:Bool) -> Void in
         }
-        
-        // Allocate my workouts view
     }
     
     @IBAction func allWorkoutActionListener(sender: AnyObject) {
-        
+        carousel.currentItemIndex = 1
+        self.allWorkoutMethod()
+    }
+    func allWorkoutMethod(){
         // Moving mover bar through animation
         UIView.animateWithDuration(0.2, delay: 0.0, options: .TransitionCrossDissolve, animations: { () -> Void in
-                self.constraintMoverLeading.constant = self.buttonAllWorkouts.frame.size.width
-                self.view.layoutIfNeeded()
+            self.constraintMoverLeading.constant = self.buttonAllWorkouts.frame.size.width
+            self.view.layoutIfNeeded()
             }) { (isCompleted:Bool) -> Void in
         }
     }
 
     @IBAction func calendarActionListener(sender: AnyObject) {
-        
+        carousel.currentItemIndex = 2
+        self.calendarMethod()
+    }
+    func calendarMethod(){
         // Moving mover bar through animation
         UIView.animateWithDuration(0.2, delay: 0.0, options: .TransitionCrossDissolve, animations: { () -> Void in
             self.constraintMoverLeading.constant = self.buttonAllWorkouts.frame.size.width*2
@@ -99,4 +122,74 @@ class WorkoutsHomeViewController: UIViewController {
     }
     */
 
+}
+
+extension WorkoutsHomeViewController: iCarouselDataSource, iCarouselDelegate{
+    func numberOfItemsInCarousel(carousel: iCarousel) -> Int
+    {
+        return 3
+    }
+    
+    func carousel(carousel: iCarousel, viewForItemAtIndex index: Int, reusingView view: UIView?) -> UIView
+    {
+        var itemView: UIView!
+        
+        //create new view if no view is available for recycling
+        if (view == nil)
+        {
+            if index == 0 {
+                myWorkoutsView.view.frame = CGRect(x:0, y:0, width:UIScreen.mainScreen().bounds.width, height:UIScreen.mainScreen().bounds.height - (64 + 44))
+                itemView = myWorkoutsView.view
+            }else if index == 1{
+                allWorkoutsView.view.frame = CGRect(x:0, y:0, width:UIScreen.mainScreen().bounds.width, height:UIScreen.mainScreen().bounds.height - (64 + 44))
+                itemView = allWorkoutsView.view
+            }else if index == 2{
+                calendarView.view.frame = CGRect(x:0, y:0, width:UIScreen.mainScreen().bounds.width, height:UIScreen.mainScreen().bounds.height - (64 + 44))
+                itemView = calendarView.view
+            }
+            
+        }
+        else
+        {
+            //get a reference to the label in the recycled view
+            if index == 0 {
+                itemView = myWorkoutsView.view
+            }else if index == 1{
+                itemView = allWorkoutsView.view
+            }else if index == 2{
+                itemView = calendarView.view
+            }
+        }
+        
+        //set item label
+        //remember to always set any properties of your carousel item
+        //views outside of the `if (view == nil) {...}` check otherwise
+        //you'll get weird issues with carousel item content appearing
+        //in the wrong place in the carousel
+        //label.text = "\(items[index])"
+        
+        return itemView
+    }
+    func carouselCurrentItemIndexDidChange(carousel: iCarousel) {
+        if carousel.currentItemIndex == 0 {
+            self.myWorkoutMethod()
+        }else if carousel.currentItemIndex == 1{
+            self.allWorkoutMethod()
+        }else if carousel.currentItemIndex == 2{
+            self.calendarMethod()
+        }
+    }
+    
+    func carousel(carousel: iCarousel, valueForOption option: iCarouselOption, withDefault value: CGFloat) -> CGFloat
+    {
+        if (option == .Spacing)
+        {
+            //Some spacing
+            //return value * 1.1
+            
+            //No spacing
+            return value
+        }
+        return value
+    }
 }
